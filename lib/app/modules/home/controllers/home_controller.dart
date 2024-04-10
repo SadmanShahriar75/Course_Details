@@ -11,8 +11,8 @@ class HomeController extends GetxController {
 
   void fetchMapdata() async {
     try {
-      final response = 
-         await _dio.get("https://getlearn-admin.getbuildfirst.com/api/course/details/1");
+      final response = await _dio
+          .get("https://getlearn-admin.getbuildfirst.com/api/course/details/1");
       singleproductdata.value = response.data;
       print(singleproductdata);
     } catch (e) {

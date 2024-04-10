@@ -23,7 +23,7 @@ class HomeView extends GetView<HomeController> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Icon(
-                      Icons.menu,
+                      Icons.format_align_left,
                       color: Colors.white,
                     ),
                     Text(
@@ -37,7 +37,7 @@ class HomeView extends GetView<HomeController> {
                       ),
                     ),
                     Icon(
-                      Icons.shopping_basket_sharp,
+                      Icons.shopping_cart,
                       color: Colors.white,
                     )
                   ],
@@ -113,7 +113,10 @@ class HomeView extends GetView<HomeController> {
                           height: 15,
                         ),
 
-                        Text.rich(
+
+
+
+                        Obx(() => Text.rich(
                           TextSpan(
                             children: [
                               TextSpan(
@@ -138,7 +141,13 @@ class HomeView extends GetView<HomeController> {
                               ),
                             ],
                           ),
-                        ),
+                        ),),
+
+
+
+
+
+                        
                         const SizedBox(
                           height: 10,
                         ),
