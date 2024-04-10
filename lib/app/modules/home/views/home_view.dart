@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -15,7 +14,7 @@ class HomeView extends GetView<HomeController> {
       backgroundColor: const Color(0xFF7455F7),
       body: Column(
         children: [
-         const  Column(
+          const Column(
             children: [
               Padding(
                 padding:
@@ -96,49 +95,39 @@ class HomeView extends GetView<HomeController> {
                           height: 50,
                         ),
 
-
-
-
-                     Obx(() =>     Text(
-                          homeController.singleproductdata["data"]["title"].toString(),
-                         
-                          style: TextStyle(
-                            color: Color(0xFF333333),
-                            fontSize: 14,
-                            fontFamily: 'Poppins',
-                            fontWeight: FontWeight.w500,
+                        Obx(
+                          () => Text(
+                            homeController.singleproductdata["data"]["title"]
+                                .toString(),
+                            style: const TextStyle(
+                              color: Color(0xFF333333),
+                              fontSize: 14,
+                              fontFamily: 'Poppins',
+                              fontWeight: FontWeight.w500,
+                            ),
+                            maxLines: 1,
                           ),
-                          maxLines: 1,
-                        ),),
-
-
-
-
-
+                        ),
 
                         const SizedBox(
                           height: 15,
                         ),
 
-                         Text.rich(
+                        Text.rich(
                           TextSpan(
                             children: [
                               TextSpan(
-                                text:
-                                homeController.singleproductdata["data"]["sub_title"].toString(),
-                                   
-                                style: TextStyle(
+                                text: homeController.singleproductdata["data"]
+                                        ["sub_title"]
+                                    .toString(),
+                                style: const TextStyle(
                                   color: Color(0xFF666666),
                                   fontSize: 10,
                                   fontFamily: 'Poppins',
                                   fontWeight: FontWeight.w400,
                                 ),
                               ),
-
-
-
-
-                              TextSpan(
+                              const TextSpan(
                                 text: 'See more',
                                 style: TextStyle(
                                   color: Color(0xFF999999),
@@ -155,7 +144,7 @@ class HomeView extends GetView<HomeController> {
                         ),
                         Row(
                           children: [
-                            Text(
+                            const Text(
                               '5.0',
                               style: TextStyle(
                                 color: Color(0xFF333333),
@@ -164,14 +153,14 @@ class HomeView extends GetView<HomeController> {
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Image.asset("assets/images/star.png"),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
-                            Text(
+                            const Text(
                               '(25,00)',
                               style: TextStyle(
                                 color: Color(0xFF999999),
@@ -266,7 +255,7 @@ class HomeView extends GetView<HomeController> {
                         const SizedBox(
                           height: 20,
                         ),
-                    // api testing
+                        // api testing
                         Obx(
                           () => Text(
                             "BDT ${homeController.singleproductdata["data"]["price"].toString()}",
@@ -280,7 +269,6 @@ class HomeView extends GetView<HomeController> {
                           ),
                         ),
                         //
-
 
                         const SizedBox(
                           height: 5,
@@ -371,10 +359,9 @@ class HomeView extends GetView<HomeController> {
                         const SizedBox(
                           height: 20,
                         ),
-                     //api test
+                        //api test
 
-
-                        const  Text(
+                        const Text(
                           'What you’ll learn ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
@@ -385,19 +372,10 @@ class HomeView extends GetView<HomeController> {
                           ),
                         ),
 
-
-
-
-                        
-
                         const SizedBox(
                           height: 20,
                         ),
 
-
-
-
-
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -415,19 +393,20 @@ class HomeView extends GetView<HomeController> {
                             const SizedBox(
                               width: 10,
                             ),
-
-                 Obx(() =>       Text(
-                              homeController.singleproductdata["data"]["learning_topic"][0].toString(),
-                              style: TextStyle(
-                                color: Color(0xFF666666),
-                                fontSize: 10,
-                                fontFamily: 'Poppins',
-                                fontWeight: FontWeight.w500,
+                            Obx(
+                              () => Text(
+                                homeController.singleproductdata["data"]
+                                        ["learning_topic"][0]
+                                    .toString(),
+                                style: const TextStyle(
+                                  color: Color(0xFF666666),
+                                  fontSize: 10,
+                                  fontFamily: 'Poppins',
+                                  fontWeight: FontWeight.w500,
+                                ),
+                                maxLines: 1,
                               ),
-                              maxLines: 1,
-                            ),),
-
-                      
+                            ),
                           ],
                         ),
 
@@ -452,26 +431,20 @@ class HomeView extends GetView<HomeController> {
                             const SizedBox(
                               width: 10,
                             ),
-
-
-
-                         Obx(() =>    Text(
-                                homeController.singleproductdata["data"]["learning_topic"][1].toString(),
-                              style: TextStyle(
-                                color: Color(0xFF666666),
-                                fontSize: 12,
-                                fontFamily: 'Poppins',
-                                fontWeight: FontWeight.w500,
+                            Obx(
+                              () => Text(
+                                homeController.singleproductdata["data"]
+                                        ["learning_topic"][1]
+                                    .toString(),
+                                style: const TextStyle(
+                                  color: Color(0xFF666666),
+                                  fontSize: 12,
+                                  fontFamily: 'Poppins',
+                                  fontWeight: FontWeight.w500,
+                                ),
+                                maxLines: 1,
                               ),
-                              maxLines: 1,
-                            ),),
-
-
-
-
-
-
-
+                            ),
                           ],
                         ),
                         const SizedBox(
@@ -495,15 +468,19 @@ class HomeView extends GetView<HomeController> {
                             const SizedBox(
                               width: 10,
                             ),
-                             Text(
-                              homeController.singleproductdata["data"]["learning_topic"][2].toString(),
-                              style: TextStyle(
-                                color: Color(0xFF666666),
-                                fontSize: 12,
-                                fontFamily: 'Poppins',
-                                fontWeight: FontWeight.w500,
+                            Obx(
+                              () => Text(
+                                homeController.singleproductdata["data"]
+                                        ["learning_topic"][2]
+                                    .toString(),
+                                style: const TextStyle(
+                                  color: Color(0xFF666666),
+                                  fontSize: 12,
+                                  fontFamily: 'Poppins',
+                                  fontWeight: FontWeight.w500,
+                                ),
+                                maxLines: 2,
                               ),
-                              maxLines: 2,
                             ),
                           ],
                         ),
@@ -511,14 +488,10 @@ class HomeView extends GetView<HomeController> {
                           height: 15,
                         ),
 
-
-
-                       
-
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
-                        Text(
+                        const Text(
                           'Show more',
                           textAlign: TextAlign.center,
                           style: TextStyle(
@@ -529,7 +502,7 @@ class HomeView extends GetView<HomeController> {
                           ),
                         ),
 
-                        SizedBox(
+                        const SizedBox(
                           height: 40,
                         ),
 
@@ -542,7 +515,7 @@ class HomeView extends GetView<HomeController> {
                             fontWeight: FontWeight.w600,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         /////////////////////////////
@@ -553,7 +526,7 @@ class HomeView extends GetView<HomeController> {
                           decoration: ShapeDecoration(
                             color: Colors.white,
                             shape: RoundedRectangleBorder(
-                              side: BorderSide(
+                              side: const BorderSide(
                                   width: 1, color: Color(0xFFF6F6F6)),
                               borderRadius: BorderRadius.circular(6),
                             ),
@@ -699,7 +672,7 @@ class HomeView extends GetView<HomeController> {
 
                         ///////////////////////////////////////////////////
 
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         /////////////////////////
@@ -710,12 +683,12 @@ class HomeView extends GetView<HomeController> {
                           decoration: ShapeDecoration(
                             color: Colors.white,
                             shape: RoundedRectangleBorder(
-                              side: BorderSide(
+                              side: const BorderSide(
                                   width: 1, color: Color(0xFFF6F6F6)),
                               borderRadius: BorderRadius.circular(6),
                             ),
                           ),
-                          child: Row(
+                          child: const Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
@@ -731,7 +704,7 @@ class HomeView extends GetView<HomeController> {
                             ],
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
 
@@ -741,12 +714,12 @@ class HomeView extends GetView<HomeController> {
                           decoration: ShapeDecoration(
                             color: Colors.white,
                             shape: RoundedRectangleBorder(
-                              side: BorderSide(
+                              side: const BorderSide(
                                   width: 1, color: Color(0xFFF6F6F6)),
                               borderRadius: BorderRadius.circular(6),
                             ),
                           ),
-                          child: Row(
+                          child: const Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
@@ -769,12 +742,12 @@ class HomeView extends GetView<HomeController> {
                           decoration: ShapeDecoration(
                             color: Colors.white,
                             shape: RoundedRectangleBorder(
-                              side: BorderSide(
+                              side: const BorderSide(
                                   width: 1, color: Color(0xFFF6F6F6)),
                               borderRadius: BorderRadius.circular(6),
                             ),
                           ),
-                          child: Row(
+                          child: const Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
@@ -791,7 +764,7 @@ class HomeView extends GetView<HomeController> {
                           ),
                         ),
 
-                        SizedBox(
+                        const SizedBox(
                           height: 30,
                         ),
 
@@ -866,10 +839,10 @@ class HomeView extends GetView<HomeController> {
                         Row(
                           children: [
                             Image.asset("assets/images/document.png"),
-                            SizedBox(
+                            const SizedBox(
                               width: 10,
                             ),
-                            Text(
+                            const Text(
                               'Support Files',
                               style: TextStyle(
                                 color: Color(0xFF333333),
@@ -887,10 +860,10 @@ class HomeView extends GetView<HomeController> {
                         Row(
                           children: [
                             Image.asset("assets/images/book.png"),
-                            SizedBox(
+                            const SizedBox(
                               width: 10,
                             ),
-                            Text(
+                            const Text(
                               '10 Articles',
                               style: TextStyle(
                                 color: Color(0xFF333333),
@@ -901,17 +874,17 @@ class HomeView extends GetView<HomeController> {
                             )
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
 
                         Row(
                           children: [
                             Image.asset("assets/images/infinity.png"),
-                            SizedBox(
+                            const SizedBox(
                               width: 10,
                             ),
-                            Text(
+                            const Text(
                               'Full lifetime access',
                               style: TextStyle(
                                 color: Color(0xFF333333),
@@ -922,17 +895,17 @@ class HomeView extends GetView<HomeController> {
                             )
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
 
                         Row(
                           children: [
                             Image.asset("assets/images/smartphone.png"),
-                            SizedBox(
+                            const SizedBox(
                               width: 10,
                             ),
-                            Text(
+                            const Text(
                               'Access on mobile, desktop, and TV',
                               style: TextStyle(
                                 color: Color(0xFF333333),
@@ -943,7 +916,7 @@ class HomeView extends GetView<HomeController> {
                             )
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
 
@@ -968,7 +941,7 @@ class HomeView extends GetView<HomeController> {
                           height: 60,
                         ),
 
-                        Text(
+                        const Text(
                           'Requirements',
                           textAlign: TextAlign.center,
                           style: TextStyle(
@@ -978,9 +951,6 @@ class HomeView extends GetView<HomeController> {
                             fontWeight: FontWeight.w600,
                           ),
                         ),
-
-
-                        
 
                         Row(
                           children: [
@@ -992,19 +962,21 @@ class HomeView extends GetView<HomeController> {
                                 shape: OvalBorder(),
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
-                            Obx(() =>  Text(
-                             homeController.singleproductdata["data"]["requirements"].toString(),
-                              style: TextStyle(
-                                color: Color(0xFF333333),
-                                fontSize: 10,
-                                fontFamily: 'Poppins',
-                                fontWeight: FontWeight.w500,
-                              ),
-                              maxLines: 1,
-                            )),
+                            Obx(() => Text(
+                                  homeController.singleproductdata["data"]
+                                          ["requirements"]
+                                      .toString(),
+                                  style: const TextStyle(
+                                    color: Color(0xFF333333),
+                                    fontSize: 10,
+                                    fontFamily: 'Poppins',
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                  maxLines: 1,
+                                )),
                           ],
                         ),
 
@@ -1025,15 +997,18 @@ class HomeView extends GetView<HomeController> {
                         const SizedBox(
                           height: 20,
                         ),
-                       //textapi
-                        Text(
-                          homeController.singleproductdata["data"]["description"].toString(),
-                          
-                          style: TextStyle(
-                            color: Color(0xFF666666),
-                            fontSize: 14,
-                            fontFamily: 'Poppins',
-                            fontWeight: FontWeight.w500,
+                        //textapi
+                        Obx(
+                          () => Text(
+                            homeController.singleproductdata["data"]
+                                    ["description"]
+                                .toString(),
+                            style: const TextStyle(
+                              color: Color(0xFF666666),
+                              fontSize: 14,
+                              fontFamily: 'Poppins',
+                              fontWeight: FontWeight.w500,
+                            ),
                           ),
                         ),
                         const SizedBox(
@@ -1066,7 +1041,7 @@ class HomeView extends GetView<HomeController> {
                           ),
                         ),
 
-                        SizedBox(
+                        const SizedBox(
                           height: 70,
                         ),
                         ////
