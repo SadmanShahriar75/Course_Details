@@ -1,6 +1,12 @@
 # course_details
 
 A new Flutter project.
+#output
+
+
+Uploading cousrse video.mp4…
+
+
 
 ## Getting Started
 
