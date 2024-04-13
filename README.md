@@ -1,10 +1,21 @@
 # course_details
 
 A new Flutter project.
-#output
 
 
-Uploading cousrse video.mp4…
+
+https://github.com/SadmanShahriar75/Course_Details/assets/130807436/e305dde7-92b2-4264-a5f5-e97d3daf4711
+
+
+
+
+
+
+
+
+
+
+
 
 
 
